@@ -39,6 +39,15 @@ button {
   border-radius: 5px;
   overflow: hidden;
 }
+
+.progreso {
+  height: 100%;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  transition: width 0.4s ease, background 0.4s ease;
+}
+
 .progreso.rojo {
   background: #e53935;
 }
