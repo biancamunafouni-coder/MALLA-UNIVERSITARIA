@@ -49,7 +49,7 @@ function render() {
         Contacto: ${emp.contacto}<br><br>
 
         <div class="barra">
-          <div class="progreso" style="width:${progreso}%">
+          <div class="progreso ${colorPorcentaje(progreso)}" style="width:${progreso}%">
             ${progreso}%
           </div>
         </div>
@@ -57,5 +57,11 @@ function render() {
     `;
   });
 }
+function colorPorcentaje(p) {
+  if (p < 40) return "rojo";
+  if (p < 80) return "amarillo";
+  return "verde";
+}
+
 
 render();
