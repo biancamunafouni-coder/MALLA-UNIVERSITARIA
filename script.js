@@ -36,6 +36,12 @@ function calcularProgreso(docs) {
   return Math.round((cumplidos / total) * 100);
 }
 
+function colorPorcentaje(p) {
+  if (p < 40) return "rojo";
+  if (p < 80) return "amarillo";
+  return "verde";
+}
+
 function render() {
   lista.innerHTML = "";
 
@@ -57,11 +63,5 @@ function render() {
     `;
   });
 }
-function colorPorcentaje(p) {
-  if (p < 40) return "rojo";
-  if (p < 80) return "amarillo";
-  return "verde";
-}
-
 
 render();
