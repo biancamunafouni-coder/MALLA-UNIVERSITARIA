@@ -40,10 +40,15 @@ button {
   overflow: hidden;
 }
 
-.progreso {
-  height: 100%;
-  background: #4caf50;
-  text-align: center;
-  color: white;
-  font-size: 12px;
+.progreso.rojo {
+  background: #e53935;
+}
+
+.progreso.amarillo {
+  background: #fbc02d;
+  color: #000;
+}
+
+.progreso.verde {
+  background: #43a047;
 }
